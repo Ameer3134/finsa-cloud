@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 
 const links = [
   { href: "/", label: "Home" },
   { href: "/materials", label: "Materials" },
-  { href: "/people", label: "People" },
+  { href: "/people", label: "Administration" },
   { href: "/handbook", label: "Handbook" },
   { href: "/cgpa", label: "CGPA Calculator" },
   { href: "/voice", label: "Student Voice" },
@@ -19,9 +20,12 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-brand-100 bg-white/80 backdrop-blur">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" className="font-display text-lg font-bold text-brand-900">
-          FINSA <span className="text-brand-500">Cloud</span>
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-3 py-3">
+        <Link href="/" className="flex">
+        <Image
+         src="/finsa-cloud-logo.png" alt="Finsa Cloud Image" width={120} height={40} priority
+        
+        />
         </Link>
 
         {/* Desktop links */}

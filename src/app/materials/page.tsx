@@ -12,8 +12,9 @@ export default function MaterialsPage() {
   return (
     <>
       <PageHeader
-        title="Study Materials"
-        subtitle="Pick your level to open the resources folder on Google Drive."
+        title="Study"
+        span = " Materials"
+        subtitle="select your level to open the resources folder on Google Drive."
       />
       <Section>
         <LevelTabs levels={materials} />

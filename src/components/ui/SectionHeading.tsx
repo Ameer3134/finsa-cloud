@@ -16,12 +16,12 @@ export default function SectionHeading({
       <h2 className="font-display text-3xl font-bold text-brand-900">
         {title}
       </h2>
-      <div
+      {/* <div
         className={cn(
           "mt-3 h-1 w-16 rounded-full bg-accent-500",
           centered && "mx-auto"
         )}
-      />
+      /> */}
       {subtitle && (
         <p
           className={cn(

@@ -2,9 +2,11 @@ import Container from "./Container";
 
 export default function PageHeader({
   title,
+  span,
   subtitle,
 }: {
   title: string;
+  span?: string;
   subtitle?: string;
 }) {
   return (
@@ -13,14 +15,21 @@ export default function PageHeader({
       <Container className="relative py-14 md:py-20">
         <h1 className="animate-fade-up font-display text-3xl font-extrabold md:text-5xl">
           {title}
+           <span className="text-accent-500">
+          {span}
+        </span>
         </h1>
+       
+
         <div
-          className="animate-fade-up mt-4 h-1 w-16 rounded-full bg-accent-500"
-          style={{ animationDelay: "100ms" }}
+          // className="animate-fade-up mt-2 h-0.5 w-1/2 md:w-1/2 rounded-full bg-accent-500"
+          // style={{ animationDelay: "100ms" }}
         />
+
+
         {subtitle && (
           <p
-            className="animate-fade-up mt-4 max-w-2xl text-white/80"
+            className="animate-fade-up mt-4 max-w-2xl text-white/80  border-t border-accent-500 w-fit text-sm md:text-lg xl:text-xl" 
             style={{ animationDelay: "200ms" }}
           >
             {subtitle}
