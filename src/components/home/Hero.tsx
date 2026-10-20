@@ -1,4 +1,6 @@
 import { Button, Container } from "@/components/ui";
+import Link from "next/dist/client/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -41,6 +43,18 @@ export default function Hero() {
           <Button href="/cgpa" variant="light" size="lg">
             CGPA Calculator
           </Button>
+        </div>
+        <div>
+          <Link href="/" className="absolute right-0 top-0 -translate-y-0.5 opacity-8 pointer-events-none select-none z-0 ">
+            <Image
+              src="/finsa-logo.jpg"
+              alt="Finsa Cloud Image"
+              width={600}
+              height={600} 
+              className="w-125 md:[500px] lg:w-163 h-auto mix-blend-screen"
+              priority
+            />
+          </Link>
         </div>
       </Container>
     </section>

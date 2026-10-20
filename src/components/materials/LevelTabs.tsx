@@ -15,7 +15,7 @@ export default function LevelTabs({ levels }: { levels: MaterialLevel[] }) {
       <div
         role="tablist"
         aria-label="Select level"
-        className="flex flex-wrap gap-3"
+        className="flex flex-wrap gap-4 md:7"
       >
         {levels.map((l) => (
           <button

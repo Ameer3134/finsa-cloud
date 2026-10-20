@@ -6,3 +6,4 @@ export { default as Card } from "./Card";
 export { default as Badge } from "./Badge";
 export { default as Reveal } from "./Reveal";
 export { default as PageHeader } from "./PageHeader";
+export { default as Accordion } from "./Accordion";

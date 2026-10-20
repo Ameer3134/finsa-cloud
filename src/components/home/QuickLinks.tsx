@@ -11,7 +11,7 @@ const items = [
   {
     href: "/people",
     icon: "👥",
-    title: "People",
+    title: "Administration",
     text: "Executives, SRC, tutors, editorial board and lecturers.",
   },
   {
